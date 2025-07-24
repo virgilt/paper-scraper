@@ -84,14 +84,3 @@ This project is licensed under the **MIT License**. Feel free to adapt or extend
 ## 🤝 Contributing
 
 Pull requests are welcome. If you’d like to add more sources, keywords, or export formats (e.g., JSON), open an issue or submit a PR.
-
----
-
-## 📫 Contact
-
-For any questions or feedback, feel free to reach out via GitHub or email.
-
----
-
-Built with ❤️ to support open-source RL benchmarking.
-
