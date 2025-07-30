@@ -9,44 +9,40 @@ import os
 
 # Farama project keywords to search for and match
 FARAMA_PROJECTS = {
-    "PettingZoo": ["PettingZoo", "terry2021pettingzoo"],
-    "Gymnasium": ["Gymnasium", "Farama Gymnasium", "towers2024gymnasium"],
+    "PettingZoo": ["PettingZoo", "terry2021pettingzoo", "pettingzoo-v1", "pettingzoo library"],
+    "Gymnasium": ["Gymnasium", "Farama Gymnasium", "towers2024gymnasium", "OpenAI Gym", "openai/gym"],
     "SuperSuit": ["SuperSuit", "SuperSuit wrapper", "SuperSuit"],
-    "MiniGrid": ["MiniGrid", "minigrid environment", "MinigridMiniworld23"],
+    "MiniGrid": ["MiniGrid", "minigrid environment", "MinigridMiniworld23", "gym-minigrid", "gym_minigrid", "chevalier-boisvert2018", "BabyAI", "chevalier2018babyai"],
     "Minari": ["Minari", "minari", "minari2024"],
-    "MetaWorld+": ["Meta-World+", "MetaWorld", "mclean2025metaworldimprovedstandardizedrl"],
+    "MetaWorld+": ["Meta-World+", "MetaWorld", "mclean2025metaworldimprovedstandardizedrl", "metaworld benchmark", "openai metaworld", "yu2020meta", "rlworkgroup/metaworld"],
     "Shimmy": ["Shimmy"],
     "Gymnasium Robotics": ["Gymnasium Robotics"],
-    "MAgent": ["MAgent", "magent2020", "zheng2018magent"],
+    "MAgent": ["MAgent", "magent2020", "zheng2018magent", "many-agent reinforcement learning", "magent platform", "geek-ai/magent"],
     "MOMAland": ["MOMAland", "felten2024momaland"],
-    "ViZDoom": ["ViZDoom", "Wydmuch2019ViZdoom", "Kempka2016ViZDoom"],
+    "ViZDoom": ["ViZDoom", "Wydmuch2019ViZdoom", "Kempka2016ViZdoom"],
     "ALE": ["Arcade Learning Environment", "ALE", "bellemare13arcade", "machado18arcade", "farebrother2024cale"],
     "ChatArena": ["ChatArena", "chatarena"],
     "CrowdPlay": ["CrowdPlay", "gerstgrasser2022crowdplay"],
     "Highway-env": ["Highway-env", "highway-env"],
     "Stable-Retro": ["Stable Retro", "stable-retro"],
-    "BabyAI": ["BabyAI", "chevalier2018babyai"],
-    "Multi-Agent Actor-Critic": ["Multi-Agent Actor-Critic", "lowe2017multi"],
-    "Workflow-Guided Exploration": ["Workflow-Guided Exploration", "liu2018reinforcement"],
-    "Mordatch Language Emergence": ["Emergence of Grounded Compositional Language", "mordatch2017emergence"],
-    "Procgen2": ["Procgen2"],
+    "Procgen2": ["Procgen2", "Procgen Benchmark", "procgen benchmark", "openai/procgen"],
     "Jumpy": ["Jumpy"]
 }
 
 PARTIAL_MATCH_PATTERNS = {
     "PettingZoo": r"pettingzoo[-_.a-z0-9]*",
-    "Gymnasium": r"gymnasium[-_.a-z0-9]*",
-    "MiniGrid": r"minigrid[-_.a-z0-9]*",
+    "Gymnasium": r"gymnasium[-_.a-z0-9]*|openai[-_.]?gym",
+    "MiniGrid": r"minigrid[-_.a-z0-9]*|gym[-_.]?minigrid|babyai[-_.a-z0-9]*",
     "Minari": r"minari[-_.a-z0-9]*",
-    "MetaWorld+": r"metaworld[-_.a-z0-9]*",
+    "MetaWorld+": r"metaworld[-_.a-z0-9]*|meta-world[-_.a-z0-9]*|rlworkgroup[-_.]?metaworld",
     "Shimmy": r"shimmy[-_.a-z0-9]*",
     "Gymnasium Robotics": r"gymnasium[-_.a-z0-9]*robotics",
-    "MAgent": r"magent[-_.a-z0-9]*",
+    "MAgent": r"magent[-_.a-z0-9]*|geek-ai[-_.]?magent",
     "ViZDoom": r"vizdoom[-_.a-z0-9]*",
     "SuperSuit": r"supersuit[-_.a-z0-9]*",
     "ALE": r"ale[-_.a-z0-9]*",
     "ChatArena": r"chatarena[-_.a-z0-9]*",
-    "Procgen2": r"procgen2[-_.a-z0-9]*",
+    "Procgen2": r"procgen2[-_.a-z0-9]*|procgen[-_.a-z0-9]*|openai[-_.]?procgen",
     "Jumpy": r"jumpy[-_.a-z0-9]*"
 }
 
